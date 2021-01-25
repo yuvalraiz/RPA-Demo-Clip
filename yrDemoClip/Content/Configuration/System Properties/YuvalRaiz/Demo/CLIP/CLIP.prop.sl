@@ -4,6 +4,6 @@ properties:
   - ucmdb_url: 'https://cms.mfdemos.com:8443'
   - ucmdb_username: admin
   - ucmdb_passwrod:
-      value: xxx
+      value: XXXX
       sensitive: true
   - opsb_server: opsbm1.nesa.mfdemos.com

@@ -9,9 +9,13 @@ flow:
             - command: /root/bin/onlinepay.sh stop
             - username: root
             - private_key_file: /root/Emerging_Key_pair.pem
+        publish:
+          - standard_out
         navigate:
           - SUCCESS: SUCCESS
           - FAILURE: on_failure
+  outputs:
+    - standard_out
   results:
     - FAILURE
     - SUCCESS
@@ -20,7 +24,7 @@ extensions:
     steps:
       deploy_new_configuration:
         x: 205
-        'y': 170
+        'y': 171
         navigate:
           941ff60e-60f0-ef6b-28dc-f46560be4dcf:
             targetId: 9a8d7f88-8ab7-c2ce-64ea-2e64d805be36
